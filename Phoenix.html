@@ -1,0 +1,51 @@
+<html>
+    <head>
+          <title> Phoenix </title>
+         <link rel="stylesheet" href="style.css"></link>
+        <script src="Amaran.js"></script>
+    </head>
+    <body>
+        
+        <h2> The break Statement in a Switch </h2>
+        <p id="demo1"></p>
+        <script>
+            let day;
+            switch(7){
+                case 0:
+                    day = "Sunday";
+                    break;
+                case 1:
+                    day = "Monday";
+                    break;
+                case 7:
+                   day = "Tuesday";
+                   break;
+                case 3:
+                   day = "Wednesday";
+                   break;
+                case 4:
+                   day = "Thursday";
+
+                   break;
+                case 5:
+                   day = "Friday";
+                   break;
+                case 6:
+                   day = "Saturday";
+                   break;
+            }
+            document.getElementById("demo1").innerHTML = "Today is" + day;
+        </script>
+        <p id="key"></p>
+        <script>
+            let text ="";
+            
+            for(let i=0;i<10;i++){
+                if(i==3){break;}
+                text +="the number is"+i+ "<br>";
+            }
+            document.getElementById("key").innerHTML=text;
+        </script>
+    </body>
+
+</html>

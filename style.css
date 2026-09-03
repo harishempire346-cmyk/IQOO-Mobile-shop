@@ -1,0 +1,324 @@
+
+             body{
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background: rgb(238, 148, 79);
+            color: white;
+            padding: 1em 0;
+        }
+        header .intro {
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           max-width: 1000px;
+           margin: auto;
+           color: rgb(9, 9, 9);
+        }
+        nav a {
+             margin: 0 1em;
+             color: rgb(6, 6, 6);
+             text-decoration: none;
+        }
+        a:hover{
+            background-color: none;
+            color: rgb(255, 0, 0);
+        }
+        .two{
+            float: right;
+        }
+        .three{
+            font-size: larger;
+            padding: 185px  15px  185px  135px;
+            text-decoration:none;
+            color: black;
+            font-size: x-large;
+        }
+        .four{
+            padding: 20px  30000px  18px  40px;
+            
+        }
+        .five {
+            text-align: center;
+            padding: 0px 1100px 1000px 0px;
+            color: black;
+            text-decoration: none;
+            
+        }
+        #ball{
+            padding: 20px  30000px  18px  40px;
+            border:  2px solid black;
+            border-radius: 8px;
+        }
+        .six{
+            
+            padding: 0px 1000px 10000px 0px;
+        }
+        .bat{
+            border: 1px;
+            float: right;
+        }
+        .base{
+            border: 1px;
+            float: right;
+        }
+        .man{
+            
+            float: right;
+        }
+        .girl{
+            
+            float: right;
+        }
+        .key{
+            
+            float: right;
+            
+        }
+        .phone{
+            
+            float: right;
+            
+        }
+
+        #note{
+            position: relative;
+            width: 40%;
+            height: 60%;
+            margin: auto;
+            border: solid white 2px;
+            float: left;
+            border-radius: 5px;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            scroll-snap-type: y mandatory;
+        }
+        #demo{
+            text-align: center;
+        }
+        .black{
+            float: left;
+            font-size: xx-large;
+            color: red;
+        }
+        .elevel{
+            padding: 65px 15px 15px 150px;
+            font-size: 150%;
+        }
+        .coupon{
+            border: 1px solid red;
+            background-color: rgb(237, 203, 203);
+            border-radius: 25px;
+            padding: 5px 5px 5px 75px;
+        }
+        .claim{
+            float: right;
+            padding: 280px 35px 15px 20px;
+            text-decoration: none;
+            color: red;   
+        }
+        .period{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4em;
+            justify-content: center;
+            margin: 2em 0;
+        }
+        .pro4{
+            float: left;
+            background: white;
+            border-radius: 8px;
+            padding: 1em;
+            width: 200px;
+            text-align: center;
+            max-width: 100%;
+            border-radius: 6px;
+            border: 1px solid black;
+            gap: 10px;
+        }
+        .pro2{
+            float: left;
+            background: white;
+            border-radius: 8px;
+            padding: 1em;
+            width: 200px;
+            text-align: center;
+            max-width: 100%;
+            border-radius: 6px;
+            border: 1px solid black;
+            gap: 3px;
+        }
+        .pro3{
+            float: left;
+            background: white;
+            border-radius: 8px;
+            padding: 1em;
+            width: 200px;
+            text-align: center;
+            max-width: 100%;
+            border-radius: 6px;
+            border: 1px solid black;
+            gap: 3px;
+        }
+        .pro5{
+            float: left;
+            background: white;
+            border-radius: 8px;
+            padding: 1em;
+            width: 200px;
+            text-align: center;
+            max-width: 100%;
+            border-radius: 6px;
+            border: 1px solid black;
+            gap: 3px;
+        }
+        .pro6{
+            float: left;
+            background: white;
+            border-radius: 8px;
+            padding: 1em;
+            width: 200px;
+            text-align: center;
+            max-width: 100%;
+            border-radius: 6px;
+            border: 1px solid black;
+            gap: 3px;
+        }
+        .pro7{
+            float: left;
+            background: white;
+            border-radius: 8px;
+            padding: 1em;
+            width: 200px;
+            text-align: center;
+            max-width: 100%;
+            border-radius: 6px;
+            border: 1px solid black;
+            gap: 3px;
+        }
+        .pro8{
+            float: left;
+            background: white;
+            border-radius: 8px;
+            padding: 1em;
+            width: 200px;
+            text-align: center;
+            max-width: 100%;
+            border-radius: 6px;
+            border: 1px solid black;
+            gap: 3px;
+        }
+        .pro9{
+            float: left;
+            background: white;
+            border-radius: 8px;
+            padding: 1em;
+            width: 200px;
+            text-align: center;
+            max-width: 100%;
+            border-radius: 6px;
+            border: 1px solid black;
+            gap: 3px;
+        }
+        .pro10{
+            float: left;
+            background: white;
+            border-radius: 8px;
+            padding: 1em;
+            width: 200px;
+            text-align: center;
+            max-width: 100%;
+            border-radius: 6px;
+            border: 1px solid black;
+            gap: 3px;
+        }
+        .pro11{
+            float: left;
+            background: white;
+            border-radius: 8px;
+            padding: 1em;
+            width: 200px;
+            text-align: center;
+            max-width: 100%;
+            border-radius: 6px;
+            border: 1px solid black;
+            gap: 3px;
+        }
+        #white{
+            padding: 100px 0px 0px 200px;
+        }
+        .onnu{
+            padding: 0px 550px 0px 0px;
+        }
+        #black{
+            padding: 100px 0px 0px 200px;
+           
+        }
+        .rendu{
+             padding: 0px 550px 0px 0px;
+        }
+        .moon{
+            position: absolute;
+            top: 150px;
+            right: 10px;
+            bottom: 200px;
+            left: 900px;
+        }
+        .abo{
+            background-color: aliceblue;
+            height: 200px;
+            width: auto;
+        }
+        .about{
+            text-align: center;
+            color: white;
+        }
+        .john {
+                position: fixed;
+                left: 0px;
+                top: 0px;
+                z-index: -1;
+        }
+        .mine{
+            padding: 0px 550px 0px 0px;
+        }
+        .women{
+            padding: 0px 550px 0px 0px;
+        }
+        .book{
+            padding: 0px 550px 0px 0px;
+        }
+        .roster{
+            padding: 10px 0px 0px 470px;
+        }
+        .free{
+            padding: 0px 0px 0px 750px;
+        }
+        #white{
+            padding: 100px 0px 0px 200px;
+        }
+        .onnu{
+            padding: 0px 550px 0px 0px;
+        }
+        #blue{
+            padding: 100px 0px 0px 200px;
+           
+        }
+        .rendu{
+             padding: 0px 550px 0px 0px;
+        }
+        .sun{
+            position: absolute;
+            top: 120px;
+            right: 10px;
+            bottom: 200px;
+            left: 900px;
+        }
+        .abo{
+            background-color: rgb(163, 206, 243);
+            height: 200px;
+            width: auto;
+        }
+        #silver{
+            padding: 100px 0px 0px 200px;
+        }

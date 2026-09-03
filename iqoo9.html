@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title> pro </title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <style>
+            body{
+                background-color: antiquewhite;
+            }
+        </style>
+    </head>
+<body>
+    <section style="text-align: center;">
+         
+        <h1> Product Color </h1><br>
+        <div class="women"> <img src="imgs/iqoo9pro.png" height="450px" width="450px" style="border-radius: 8px; position: absolute;"></div>
+        <p class="onnu"><img src="imgs/iqoo9pro.png" height="450px" width="450px" style="border-radius: 8px; position: absolute;"></p>
+    <div id="white"><img src="imgs/white.jpg" height="20px" width="20px"style="border-radius: 68px; float: left;" position ="fixed"border="1px" ></div><br>
+    <script>
+        $(document).ready(function(){
+            $(".onnu").ready(function(){
+            $(".onnu").hide();
+        });
+        $("#white").click(function(){
+        $(".onnu").toggle()
+        $(".women").hide()
+        $(".rendu").hide();
+    });
+ });
+    </script>
+    <p class="rendu"><img src="imgs/iqoo9problack.png" height="450px" width="450px" style="border-radius: 8px; float: left; bottom: 200px; position: absolute;"></p>
+    <div id="black"><img src="imgs/black.png" height="20px" width="20px"style="border-radius: 68px; float: left;"border="1px" ></div><br>
+    <script>
+        $(document).ready(function(){
+            $(".rendu").ready(function(){
+            $(".rendu").hide();
+        });
+        $("#black").click(function(){
+        $(".rendu").toggle()
+        $(".onnu").hide()
+        $(".women").hide();
+    });
+ });
+    </script>
+    </div>
+    </section>
+    <section class="sun">
+        <ul>
+            <li>64-bit Octa-core 3.00 GHz ARM...</li><br><br>
+            <li>Qualcomm Snapdragon 8 Gen 1</li><br><br>
+            <li> Triple camera, 50 MP + 16 MP + 50 MP</li><br><br>
+            <li> Single selfie camera, 16 MP</li><br><br>
+            <li>Li-Polymer 4700 mAh</li><br><br>
+            <li> 8GB RAM 256GB internal storage </li><br><br>
+            <li> 1440x3200, 518 PPI </li><br><br>
+            <li> 6.78" AMOLED Screen, 120Hz refresh rate</li><br><br>
+        </ul>
+    </section><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <section class="abo">
+        <div>
+        <h2 style="text-align: center; top: 10px; padding: 50px 0px 0px 0px;"> MRP :  $64,990 </h2><br></div>
+        <div class="roster">
+        <a href="add.html" style="text-decoration: none; float: left;  font-size: x-large; border: 1px solid black; border-radius: 8px; padding: 8px; background-color: green; color: aliceblue;"> ADD CARD </a>
+        </div>
+        <div class="free">
+            <a href="add.html" style="text-decoration: none; float: left; font-size: x-large; border: 1px solid black; border-radius: 8px; padding: 8px; background-color: red; color: aliceblue;"> BUY </a>
+        </div>
+    </section>
+</body>
+</html>

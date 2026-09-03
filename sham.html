@@ -1,0 +1,307 @@
+<html>
+<head>
+    <title> Arrays </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="harish.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+</head>
+<body>
+    <p id="test"> If you click on me </p>
+    <script>
+            $(document).ready(function(){
+            $("#test").mouseenter(function(){
+            $(this).hide();
+        });
+    });
+    </script>
+    <div class="run">
+        <h2> Arrays </h2>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+    <script>
+        const cars = ["BMW","VOLVO","BENX","SAAB"];
+        document.getElementById("demo1").innerHTML = cars;
+        const bikes = [];
+        bikes[0] = ["Duke"];
+        bikes[1] = ["RC"];
+        bikes[2] = ["R15"];
+        bikes[3] = ["MT"];
+        document.getElementById("demo2").innerHTML = bikes;
+    </script>
+   
+
+    <h2> Changing Array Element </h2>
+        <p id="two"></p>
+    <script>
+        const bike = ["Duke","RC","R15","MT"];
+        bike[2] = "HERO";
+        document.getElementById("two").innerHTML = bike;
+    </script>
+   
+
+    <h2> Changing tostring </h2>
+        <p id="harish"></p>
+    <script>
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        let mylist = fruits.toString();
+        document.getElementById("harish").innerHTML = mylist; 
+    </script>
+  
+
+    <h2> The Pop() </h2>
+        <p id="three"></p>
+        <p id="one"></p>
+    <script>
+        const vegs =["carrot","betroot","potato","tomato"];
+        document.getElementById("three").innerHTML = vegs.pop();
+        document.getElementById("one").innerHTML = vegs;
+    </script>
+
+
+    <h2>The Push </h2>
+        <p id="four"></p>
+        <p id="five"></p>
+    <script>
+        const fruit = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("four").innerHTML = fruit.push("graps");
+        document.getElementById("five").innerHTML = fruit;
+    </script>
+
+
+    <h2> shift() </h2>
+        <p id="six"></p>
+        <p id="seven"></p>
+    <script>
+        const car = ["BMW","VOLVO","BENX","SAAB"];
+        document.getElementById("six").innerHTML = car.shift();
+        document.getElementById("seven").innerHTML = car;
+    </script>
+
+
+    <h2> Unshift() </h2>
+        <p id="eight"></p>
+        <p id="nine"></p>
+    <script>
+        const twowheeler = ["Duke","MT","R15","RC"];
+        document.getElementById("eight").innerHTML = twowheeler.unshift("Lemon");
+        document.getElementById("nine").innerHTML = twowheeler;
+    </script>
+
+
+    <h2> Reverse </h2>
+        <p id="ten"></p>
+        <p id="eleven"></p>
+    <script>
+        const harish = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("harish").innerHTML = harish.reverse();
+        document.getElementById("eleven").innerHTML = harish;
+    </script>
+ 
+
+    <h2> Functions </h2>
+        <p id="sham"></p>
+    <script>
+        function tocelsius(f) {
+            return(5/9) * (f-32);
+        }
+        let value = tocelsius(77);
+        document.getElementById("sham").innerHTML = value;
+    </script>
+
+
+        <p id="amar"></p>
+        <button type="button" onclick="s1()" class="pen"> Click &#128526; </button>
+    <script>
+        function s1() {
+        let result = (4*5);
+        document.getElementById("amar").innerHTML = "The Product is" + result;}
+    </script>
+ 
+
+        <p id="key"> Click Me</p>
+    <script>
+        document.getElementById("key").onclick = function()
+        {myfunction()};
+        function myfunction() {
+        document.getElementById("key").innerHTML = "YOU CLICK ME !!";
+    }
+    </script>
+
+
+        <p id="ball"> Click Me</p>
+    <script>
+        document.getElementById("ball").addEventListener("mouseenter",
+        myfunction);
+        function myfunction() {
+        document.getElementById("ball").innerHTML = "YOU CLICK ME !!";
+    }
+    </script>
+   
+
+    <button onclick="getElementById('num').innerHTML = Date()"> What is the Time </button>
+        <p id="num"></p>
+        <hr>
+
+    <h2> JS Object </h2>
+        <p id="mobile"></p>
+    <script>
+        const person = {
+            firstName : "John",
+            lastName : "Deo",
+            age :21,
+        }
+        document.getElementById("mobile").innerHTML = person.firstName + " is " + person.age + " years old ";
+    </script>
+    
+    <h2> JS Object Methods </h2>
+        <P id="book"></P>
+    <script>
+        const bio = {
+            firstName : " Harish ",
+            lastName : " Prem ",
+            id : 250616 ,
+            mobile  : 9345059346,
+            fullname : function(){ 
+                return this.firstName + " " + this.lastName + " " +this.id + this.mobile;
+            }
+        };
+        document.getElementById("book").innerHTML = bio.fullname();
+    </script>
+            <p id="note"></p>
+    <script>
+        const book ={
+            brand:"rajguru",
+            pages:150,
+            price:30,
+            bookstore : function(){
+                return this.brand + ", " + this.pages + ", " + this.price;
+            }
+        };
+        document.getElementById("note").innerHTML = "The" + book.bookstore();
+    </script>
+            <h2> JQuery Hide( ) Show( ) </h2>
+            <p> If you click on the 'Hide' button the paragraph are dissapear</p>
+            <button id="hide"> Hide </button>
+            <button id="show"> show </button>
+    <script>
+        $(document).ready (function(){
+            $("#hide").click (function(){
+                $("p").hide();
+            });
+            $("#show").click (function(){
+                $("p").show();
+            });
+        });
+    </script>
+            <h2> Toggle </h2>
+            <button> Toggle between hide and show paragraph </button>
+            <p> This is a paragraph with little content </p>
+            <p> The  is another  paragraph </p>
+    <script>
+        $(document).ready (function(){
+            $("button").click (function(){
+                $("p").toggle();
+            
+            });
+        });
+    </script>
+            <h2> Demonstrate fadeIn </h2>
+            <button> Click the fade in box </button><br><br>
+            <div id="div1"
+            style = "width : 80px;height: 80px; display: none; background-color: red;"></div><br>
+            <div id="div2"
+            style = "width : 80px;height: 80px; display: none; background-color: green;"></div><br>
+            <div id="div3"
+            style = "width : 80px;height: 80px; display: none; background-color: blue;"></div><br>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#div1").fadeIn();
+                $("#div2").fadeIn("slow");
+                $("#div3").fadeIn(3000);
+            });
+        });
+    </script>
+            <h2> Slide Down </h2>
+            <div id="flip"> Click to slide down </div>
+            <div id="panel"> Hello !! </div>
+    <script>
+        $(document).ready(function(){
+            $("#flip").click(function(){
+                $("#panel").slideDown("slow");
+            });
+        });
+    </script>
+            <h2> Animation </h2>
+            <div id="demo" style="width: 90px; height: 90px; background-color: black; position: relative;"></div>
+            <button> Start Animation </button><br><br>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#demo").animate({
+                    left:'250px',
+                    opacity:'0.5',
+                    height:'150px',
+                    width:'150px'
+                });
+            });
+        });
+    </script>
+            <h2> Stop </h2>
+            <button id="stop"> Stop sliding</button>
+            <div id="fli"> Click to slide down panel </div>
+            <div id="pan"> Hellow </div>
+    <script>
+        $(document).ready(function(){
+            $("#fli").click(function(){
+                $("#pan").slideDown(5000);
+            });
+            $("#stop").click(function(){
+                $("#pan").stop;
+            });
+        });
+    </script>
+            <h2> Changing </h2>
+            <p id="p1">jQuery is fun!!</p>
+            <button> click me </button>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#p1").css("color" , "red")
+                .toggle(2000)
+            });
+        });
+    </script>
+    <style>
+        #flip , #panel {
+            text-align: center;
+            background-color: #e5eecc;
+            padding: 5px;
+            border: 1px solid rgb(53, 52, 52);
+        }
+        #panel{
+            display: none;
+            padding: 50px;
+        }
+    
+        #fli , #pan {
+            text-align: center;
+            background-color: #010101;
+            padding: 5px;
+            border: 1px solid rgb(53, 52, 52);
+            color: white;
+            border: 5px;
+            font-size: 18px;
+        }
+        #pan{
+            display: none;
+            padding: 50px;
+        }
+        .pen:hover{
+            background-color: rgb(250, 2, 2);
+        }
+    </style>
+        
+</body>
+</html>

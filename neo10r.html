@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title> pro </title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <style>
+            body{
+                background-color: antiquewhite;
+            }
+        </style>
+    </head>
+<body>
+    <section style="text-align: center;">
+         
+        <h1> Product Color </h1><br>
+        <div class="book"> <img src="imgs/neo10r.png" height="450px" width="450px" style="border-radius: 8px; position: absolute;"></div>
+    <p class="onnu"><img src="imgs/neo10r.png" height="450px" width="450px" style="border-radius: 8px; float: left; bottom: 200px; position: absolute;"></p>
+    <div id="blue"><img src="imgs/dark blue.jpg" height="20px" width="20px"style="border-radius: 68px; float: left;"border="1px" ></div><br>
+    <script>
+        $(document).ready(function(){
+            $(".onnu").ready(function(){
+            $(".onnu").hide();
+        });
+        $("#blue").click(function(){
+        $(".onnu").toggle()
+        $(".book").hide()
+        $(".rendu").hide();
+    });
+ });
+    </script>
+    <p class="rendu"><img src="imgs/neo10r sil.png" height="450px" width="450px" style="border-radius: 8px; float: left; bottom: 200px; position: absolute;"></p>
+    <div id="silver"><img src="imgs/silver.webp" height="20px" width="20px"style="border-radius: 68px; float: left;"border="1px" ></div><br>
+    <script>
+       $(document).ready(function(){
+            $(".rendu").ready(function(){
+            $(".rendu").hide();
+        });
+        $("#silver").click(function(){
+        $(".rendu").toggle()
+        $(".book").hide();
+    });
+ });
+    </script>
+    </div>
+    </section>
+    <section class="sun">
+        <ul>
+            <li>6.78-inch (1260x2800)</li><br><br>
+            <li>Qualcomm Snapdragon 8s Gen 3</li><br><br>
+            <li> 128GB, 256GB</li><br><br>
+            <li> 8GB, 12GB </li><br><br>
+            <li>Android 15</li><br><br>
+            <li> 6400mAh</li><br><br>
+            <li> Rear Camera 50MP + 8MP </li><br><br>
+            <li> Front Camera 32MP </li><br><br>
+        </ul>
+    </section><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <section class="abo">
+        <div>
+        <h2 style="text-align: center; top: 10px; padding: 50px 0px 0px 0px;"> MRP :  $30,000 </h2><br></div>
+        <div class="roster">
+        <a href="add.html" style="text-decoration: none; float: left;  font-size: x-large; border: 1px solid black; border-radius: 8px; padding: 8px; background-color: green; color: aliceblue;"> ADD CARD </a>
+        </div>
+        <div class="free">
+            <a href="add.html" style="text-decoration: none; float: left; font-size: x-large; border: 1px solid black; border-radius: 8px; padding: 8px; background-color: red; color: aliceblue;"> BUY </a>
+        </div>
+    </section>
+</body>
+</html>
